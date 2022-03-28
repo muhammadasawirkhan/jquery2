@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<button id="btn">Courses</button>
+	<button id="btn1">Hide Courses</button>
+	<div class="Courses">
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+		</ul>
+
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".courses").hide();
+
+					$("#btn").click(
+					function()
+					{
+						$(".courses").show();
+					}
+					);
+			$("#btn1").click(
+				function()
+			{
+				$(".courses").hide();
+			}
+				);
+			
+
+			});
+	</script>
+</body>
+</html>

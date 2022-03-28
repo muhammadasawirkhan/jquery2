@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<script type="text/javascript"  src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<div class="input">
+	
+	<input type="text" class="c1" name="a" value="10"/>
+	<button id="btn">Show Attributes</button>
+</div>
+<div class="main">
+
+</div>
+<script> 
+$(document).ready(
+					function()
+					{
+						var type="";
+						var class1="";
+						var name="";
+						var val="";
+						$("#btn").click(
+										function()
+										{
+											type=$(".c1").attr("type");
+											class1=$(".c1").attr("class");
+											name=$(".c1").attr("name");
+											val=$(".c1").attr("value");
+											var str="";
+											str+=$(".input").text();
+											str+="<br/>Type:"+type;
+											str+="<br/>Class:"+class1;
+											str+="<br/>Name:"+name;
+											str+="<br/>Value:"+val;
+											$(".main").html(str);
+
+
+										}
+										);
+					}
+
+				);
+
+
+</script>
+</body>
+</html>

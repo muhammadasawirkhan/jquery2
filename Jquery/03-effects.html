@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Effects</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<style> 
+	#p1{
+		position: absolute;
+		height: 100px;
+		width: 100px;
+		background-color: blue;
+	}
+	</style>
+</head>
+<body>
+	<p id="p1"> 
+			
+	</p>
+	<button id="btn">Fade</button>
+<script> 
+	
+$(document).ready(
+
+					function()
+					{
+						$("#btn").click(
+								function()
+								{
+$("#p1").animate({left:"500px"},3000).animate({left:"0px"},3000)
+								}
+										);
+					}
+
+				);
+
+	
+
+</script>
+</body>
+</html>

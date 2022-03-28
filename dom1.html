@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM</title>
+	<script type="text/javascript"  src="jquery-3.6.0.min.js"></script>
+	<style> 
+		.blue{
+			background-color:blue;
+		}
+		.green{
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+<div class="input">
+
+</div>
+<div class="main">
+
+</div>
+<script> 
+$(document).ready(
+					function()
+					{
+						var input=$("<input/>");
+						input.attr("type","password");
+						input.attr("class","blue");
+
+						var button=$("<button/>");
+						button.text("Make Green");
+						button.click(
+							function()
+							{
+						//		$(".main").html("");
+								//input.removeClass("blue");
+								input.addClass("green");
+							}
+							);
+						//str+=button;
+						$(".main").html(input);
+						$(".main").append(button);
+						
+						
+					}
+
+				);
+
+
+</script>
+</body>
+</html>

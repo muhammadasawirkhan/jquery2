@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="main">
+		<button id="btn" >Hide</button>
+		<button id="btn1" >Show</button>
+		<br/>
+		<button id="btn2" onclick="khaqan_show();khaqan_hide()">Hide</button>
+		<button id="btn3" onclick="khaqan_hide();khaqan_show();">Show</button>
+		
+	</div>
+<script> 
+	$("#btn1").hide();
+$(document).ready(
+
+					function(){
+						$("#btn").click(
+								function()
+								{
+									$("#btn").hide();
+									$("#btn1").show();
+								}
+								);
+						$("#btn1").click(
+							function()
+							{
+								$("#btn").show();
+								$("#btn1").hide();
+							}
+							);	
+			
+
+					}
+					
+					
+					
+				);
+
+
+</script>
+<script> 
+function khaqan_hide()
+{
+	var btn2=document.querySelector("#btn2");
+	var btn3=document.querySelector("#btn3");
+	
+	btn2.style.display='none';
+	btn3.style.display='block';
+}
+function khaqan_show()
+{
+	var btn2=document.querySelector("#btn2");
+	var btn3=document.querySelector("#btn3");
+	
+	btn2.style.display='block';
+	btn3.style.display='none';
+}
+
+</script>
+</body>
+</html>

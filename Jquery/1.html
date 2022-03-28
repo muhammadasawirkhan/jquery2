@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+      
+    $("#btn").click(
+          function(){
+             var paras=$("p.intro"); 
+            paras.each(function(index){alert($(this).text());})
+            
+
+          }
+            
+
+        );
+    
+        
+  /*
+  $("p").on({
+    mouseenter: function(){
+      $(this).css("background-color", "lightgray");
+    },  
+    mouseleave: function(){
+      $(this).css("background-color", "lightblue");
+    }, 
+    click: function(){
+      $(this).css("background-color", "yellow");
+    }  
+  });
+  */
+});
+</script>
+</head>
+<body>
+<button id='btn'>Click</button>
+<p class="intro">Para1</p>
+<p class="intro">Para2</p>
+
+</body>
+</html>
